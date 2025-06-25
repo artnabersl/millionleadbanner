@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>This Page Was NEVER Meant for the Public — Find Out Why!</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      background-color: #111;
+      font-family: Arial, sans-serif;
+      color: #f4f4f4;
+    }
+    .center-container {
+      height: 100%;
+      max-width: 640px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      color: #ffcc00;
+      font-size: 2.8rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 6px rgba(255, 204, 0, 0.7);
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+    }
+    h1 span {
+      color: #e63946;
+    }
+    .highlight-box {
+      background-color: #222;
+      border-left: 6px solid #e63946;
+      padding: 20px 25px;
+      margin: 25px 0 35px 0;
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: #eee;
+      font-weight: 500;
+      border-radius: 4px;
+      max-width: 100%;
+    }
+    .highlight-box b {
+      color: #ffb703;
+      font-weight: 700;
+    }
+    .highlight-box i {
+      color: #f4a261;
+      font-style: italic;
+    }
+    a.cta {
+      display: inline-block;
+      padding: 18px 50px;
+      background-color: #e63946;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      animation: blink 1.2s infinite;
+      box-shadow: 0 0 10px #e63946;
+      transition: background-color 0.3s;
+      margin-bottom: 30px;
+    }
+    a.cta:hover {
+      background-color: #d62828;
+      box-shadow: 0 0 20px #d62828;
+    }
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0.4; }
+    }
+    #popupForm {
+      display: none;
+      background-color: #222;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(230, 57, 70, 0.7);
+      width: 100%;
+      max-width: 400px;
+      text-align: left;
+    }
+    form input, form button {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+    }
+    form input {
+      background-color: #333;
+      color: #fff;
+    }
+    form button {
+      background-color: #06d6a0;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    form button:hover {
+      background-color: #05c495;
+    }
+  </style>
+</head>
+<body>
+  <div class="center-container">
+    <h1>This Page Was <span>NEVER</span> Meant for the Public — Find Out Why!</h1>
+    <div class="highlight-box">
+      Most people will <b>never see this page</b>. The methods revealed here are actively used by <b>underground marketers</b> to pull in leads and commissions while others struggle in silence.<br /><br />
+      You weren’t supposed to find this. But since you did, you now have a <i>rare edge</i> over <b>97% of people who’ll never take action</b>.
+    </div>
+
+    <a href="#" class="cta" id="unlockBtn">Unlock the System Now</a>
+
+    <form id="popupForm" method="post" action="https://www.sendsteed.com/subscribe/">
+      <input name="e110385" required type="email" placeholder="your@email.com" />
+      <input name="n110385" required type="text" placeholder="Name" />
+      <input type="hidden" name="lllid" value="110385" />
+      <input type="hidden" name="lluid" value="millionleadsbanner" />
+      <!-- Affiliate-Link entfernt / leer gelassen -->
+      <input type="hidden" name="redirect" value="" />
+      <input type="hidden" name="source" value="homepage_affiliate" />
+      <button type="submit">Let Me In</button>
+    </form>
+  </div>
+
+  <script>
+    const unlockBtn = document.getElementById('unlockBtn');
+    const popupForm = document.getElementById('popupForm');
+
+    unlockBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      popupForm.style.display = 'block';
+      unlockBtn.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
